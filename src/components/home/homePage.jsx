@@ -13,7 +13,7 @@ export default function HomePage(props) {
         <div className="paginahomepage">
             <div className="branquitopa"></div>
 
-            <div>
+            <div class="containerbotoes">
                 <div ><ButtonDate /></div>
                 <div ><ButtonClients /></div>
                 <div ><ButtonInvoice /></div>
