@@ -3,7 +3,7 @@ export default function ButtonDate(props) {
         
        return (
                 <div >
-                    <button>Lista para meses</button>
+               <button className="botoeshomepage">Lista para meses</button>
                 </div>
             
         )
