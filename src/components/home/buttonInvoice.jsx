@@ -5,7 +5,9 @@ export default function ButtonInvoice(props) {
         
     return (
              <div >
-                 <button className={styles.buttonInvoice}>Lista para recibos</button>
+
+            <button className="botoeshomepage"> Lista de Recibos</button>
+
              </div>
          
      )

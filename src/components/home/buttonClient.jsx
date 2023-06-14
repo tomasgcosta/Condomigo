@@ -1,11 +1,15 @@
-import React from 'react';
-import styles from './homePage.module.css'
+
+ import React from "react"
+ import { Link } from "react-router-dom"
 
 export default function ButtonClients(props) {
         
     return (
              <div >
-                 <button className={styles.buttonClients}>Lista clientes</button>
+
+                <Link to='/listaDeClientes'>
+                <button className="botoeshomepage"> Lista de clientes</button>
+                 </Link>
              </div>
          
      )
