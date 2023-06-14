@@ -1,3 +1,5 @@
+import React from 'react';
+import styles from './list.module.css'
 
 export function ItemDate({ name, }) {
 
@@ -11,11 +13,27 @@ export function ItemDate({ name, }) {
 
 
 
-export function ItemClients({ name, floor, onClick , status}) {
+export function ItemClients({ name, url, onClick, local }) {
 
     return (
-        <div>
-            <p onClick={onClick}>{name} {floor}  </p>
+        <div className={styles.slides }onClick={onClick}>
+            <div >
+                <img src={url} alt='123'/>
+            </div>
+            <div>
+                <p>{name}</p>
+                <p>{local}</p>
+            </div>
+        </div>
+    )
+}
+
+export function ItemHouse({ floor, door, onClick, status }) {
+
+    return (
+        <div className={styles.containerButton} onClick={onClick}>
+            <p>{floor} - {door}</p>
+
         </div>
     )
 }

@@ -1,3 +1,6 @@
+
+import React from 'react';
+
 import ButtonClients from "./buttonClient";
 import ButtonDate from "./buttonDate";
 import ButtonInvoice from "./buttonInvoice";
@@ -7,9 +10,11 @@ import './homepage.css'
 
 
 
+
 export default function HomePage(props) {
 
     return (
+
         <div className="paginahomepage">
             <div className="branquitopa"></div>
 
@@ -18,6 +23,7 @@ export default function HomePage(props) {
                 <div ><ButtonClients /></div>
                 <div ><ButtonInvoice /></div>
             </div>
+
 
         </div>
     )
