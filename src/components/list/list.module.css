@@ -1,0 +1,29 @@
+.container{
+    background: rgb(31, 217, 228, 20%);
+
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 670px;
+    max-height: 670px;
+
+    transform: translate(5%,0%);
+    border-radius: 7px;
+
+}
+
+.containerButton{
+    background-color: aliceblue;
+ 
+    max-height: 45px;
+    max-width: 340px;
+ 
+    transform: translate(2%, 25%);
+    margin-top: 7px;
+ 
+    border-radius: 5px;
+ }
+
+ .slides{
+    display: flex;
+    flex-direction: row;
+ }

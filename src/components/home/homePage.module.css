@@ -1,0 +1,66 @@
+.buttonDate {
+    display: block;
+    width: 200px;
+    /* Defina a largura desejada */
+    height: 40px;
+    /* Defina a altura desejada */
+    border: none;
+    background: linear-gradient(90deg, #00B2FF 4.19%, rgba(0, 56, 255, 0.3) 99.6%);
+    /* Defina a cor de fundo desejada */
+    color: white;
+    /* Defina a cor do texto desejada */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    /* Define o raio de curvatura das bordas */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    margin-top: 50px;
+    /* Define a margem superior desejada */
+}
+
+.buttonClients {
+    display: block;
+    width: 200px;
+    /* Defina a largura desejada */
+    height: 40px;
+    /* Defina a altura desejada */
+    border: none;
+    background: linear-gradient(90deg, #00B2FF 4.19%, rgba(0, 56, 255, 0.3) 99.6%);
+    /* Defina a cor de fundo desejada */
+    color: white;
+    /* Defina a cor do texto desejada */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    /* Define o raio de curvatura das bordas */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    margin-top: 50px;
+    /* Define a margem superior desejada */
+}
+
+
+.buttonInvoice {
+    display: block;
+    width: 200px;
+    /* Defina a largura desejada */
+    height: 40px;
+    /* Defina a altura desejada */
+    border: none;
+    background: linear-gradient(90deg, #00B2FF 4.19%, rgba(0, 56, 255, 0.3) 99.6%);
+    /* Defina a cor de fundo desejada */
+    color: white;
+    /* Defina a cor do texto desejada */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    /* Define o raio de curvatura das bordas */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    margin-top: 50px;
+    /* Define a margem superior desejada */
+}
