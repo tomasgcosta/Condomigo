@@ -3,7 +3,7 @@ export default function ButtonInvoice(props) {
         
     return (
              <div >
-                 <button>Lista para recibos</button>
+            <button className="botoeshomepage"> Lista de Recibos</button>
              </div>
          
      )
