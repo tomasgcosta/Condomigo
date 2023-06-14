@@ -1,11 +1,11 @@
 import ButtonClients from "./buttonClient";
 import ButtonDate from "./buttonDate";
 import ButtonInvoice from "./buttonInvoice";
-
+import './homepage.css'
 export default function HomePage(props) {
 
     return (
-        <div>
+        <div className="botoeshomepage">
 
             <div><ButtonDate /></div>
             <div><ButtonClients /></div>

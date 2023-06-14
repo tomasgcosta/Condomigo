@@ -4,7 +4,7 @@ export default function ButtonClients(props) {
         
     return (
              <div >
-            <Link to='/ButtonClients    '>
+            <Link to='/listaDeClientes'>
                  <button>Lista clientes</button>
                  </Link>
              </div>
