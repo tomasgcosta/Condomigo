@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import styles from './list.module.css'
 import { ItemClients } from "./items";
 import List from "./list";
+import Button from '../Button/Button';
 
 
 export default function ListClients() {
@@ -48,7 +49,7 @@ export default function ListClients() {
                     {cond && cond.length > 0 && cond.map(i => <ItemClients name={i.name} location={i.location} url={i.url} />)}
                 </List>
             </div>
-
+<Button/>
         </div>
     )
 }

@@ -18,26 +18,27 @@ export function ItemClients({ name, url, onClick, location }) {
 
     return (
         <div  >
-        <div className={styles.slides } onClick={onClick}>
-            <div >
-
-                <img className={styles.condImg}src={url} alt='123' />
-                
+            <div className={styles.slides} onClick={onClick}>
+                <div>
+                    <img className={styles.condImg} src={url} alt='123' />
+                </div>
+                <div>
+                    <p>{name}</p>
+                    <p>{location}</p>
+                </div>
             </div>
-            <div>
-                <p>{name}</p>
-                <p>{location}</p>
-            </div>
-        </div></div>
+        </div>
     )
 }
 
-export function ItemHouse({ floor, door, onClick, condoId }) {
+export function ItemHouse({ floor, door, onClick, location }) {
 
     return (
-        <div className={styles.containerButton} onClick={onClick}>
-            <p>{floor} - {door}</p>
+        <div>
+            <div className={styles.containerButton} onClick={onClick}>
+                <p>Andar: {floor} - Porta:{door}</p>
 
+            </div>
         </div>
     )
 }
