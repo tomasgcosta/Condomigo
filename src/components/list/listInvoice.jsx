@@ -19,6 +19,7 @@ export default function ListInvoice() {
                 `/api/condo/invoice`,
                 { method: "GET" }
             );
+            console.log("HEYT HI")
             if (res.status != 200) {
                 console.log("Recibos ainda não disponíveis");
             } else {
@@ -51,7 +52,7 @@ export default function ListInvoice() {
     return (
         <div className={styles.container}>
             <List>
-                {invoice.map(i => <ItemInvoice name={i.name} record={i.record} />)}
+                {invoice && invoice.length > 0 && invoice.map(i => <ItemInvoice name={i.name} record={i.record} />)}
             </List>
 
 

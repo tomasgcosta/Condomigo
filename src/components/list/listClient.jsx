@@ -44,7 +44,7 @@ export default function ListClients() {
     return (
         <div>
             <List>
-                {cond.map(i => <ItemClients name={i.name} local={i.local} url={i.url} />)}
+                {cond && cond.length > 0 && cond.map(i => <ItemClients name={i.name} local={i.local} url={i.url} />)}
             </List>
 
 
