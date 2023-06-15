@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "648ad287ba75ae5fbd278026"
+  },
+  "name": "Amanhecer",
+  "location": "Rua Fernando Pessoa, 12",
+  "price": 250,
+  "url": "/condomingo2.jpg"
+},
+{
+  "_id": {
+    "$oid": "648ad2afba75ae5fbd278027"
+  },
+  "name": "Dom Pedro",
+  "location": "Rua Dom Pedro I, 257",
+  "price": 350,
+  "url": "./condomingo3.jpg"
+},
+{
+  "_id": {
+    "$oid": "648ad2fbba75ae5fbd278028"
+  },
+  "name": "Copan",
+  "location": "Rua São Paulo, 157",
+  "price": 350,
+  "url": "./condomingo4.jpg"
+},
+{
+  "_id": {
+    "$oid": "648ae484a8d729754bb5a945"
+  },
+  "name": "Dom Pedro",
+  "location": "Rua Dom Pedro I, 4000",
+  "price": 350,
+  "url": "./condomingo1.jpg"
+}]

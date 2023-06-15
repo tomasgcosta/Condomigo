@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "648acee640a59066a6cf23bf"
+  },
+  "condoId": {
+    "$oid": "648ac7d32a6705c8c74ccda6"
+  },
+  "renteeId": {
+    "$oid": "648ace9a40a59066a6cf23bc"
+  },
+  "location": "porto",
+  "floor": "2",
+  "door": "3"
+},
+{
+  "_id": {
+    "$oid": "648aeaf3a8d729754bb5a946"
+  },
+  "condoId": {
+    "$oid": "648ac7d32a6705c8c74ccda6"
+  },
+  "renteeId": {
+    "$oid": "648ace9a40a59066a6cf23bc"
+  },
+  "location": "porto",
+  "floor": "2",
+  "door": "22"
+},
+{
+  "_id": {
+    "$oid": "648aeb06a8d729754bb5a947"
+  },
+  "condoId": {
+    "$oid": "648ac7d32a6705c8c74ccda6"
+  },
+  "renteeId": {
+    "$oid": "648ace9a40a59066a6cf23bc"
+  },
+  "location": "porto",
+  "floor": "10",
+  "door": "100"
+}]
