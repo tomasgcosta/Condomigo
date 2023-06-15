@@ -5,6 +5,9 @@ import HomePage from './components/home/homePage';
 import ListClients from'../src/components/list/listClient'
 import Login from '../src/components/login/login'
 import Recibos from '../src/components/recibos/recibos'
+import ListHouse from './components/list/listHouse';
+import ListInvoice from './components/list/listInvoice';
+
 
 
 
@@ -18,6 +21,10 @@ function App() {
         <Route path='/listaDeClientes' element={<ListClients />}/>
         <Route path='/listaderecibos' element={<Recibos/>}/>
       <Route path="/" element={<Login/>} />
+        <Route path='/listaDeApartamento' element={<ListHouse />}/>
+        <Route path='/listarecibos/:id' element={<ListInvoice/>}/>
+
+        <Route path="/" element={<Login/>} />
       </Routes>
     </Router>
 

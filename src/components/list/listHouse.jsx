@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import List from "./list";
 import { ItemHouse } from './items';
 import Header from './header';
+import Button from '../Button/Button';
 
 
 export default function ListHouse() {
@@ -54,7 +55,7 @@ export default function ListHouse() {
                 {apart && apart.length > 0 && apart.map(i => <ItemHouse floor={i.floor} door={i.door} />)}
             </List>
 
-
+<Button/>
         </div>
     )
 }

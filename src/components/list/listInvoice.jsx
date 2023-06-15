@@ -3,6 +3,7 @@ import styles from './list.module.css'
 import { useEffect, useState } from "react"
 import List from "./list";
 import { ItemHouse, ItemInvoice } from './items';
+import Button from '../Button/Button';
 
 
 
@@ -51,10 +52,11 @@ export default function ListInvoice() {
 
     return (
         <div className={styles.container}>
+
             <List>
                 {invoice && invoice.length > 0 && invoice.map(i => <ItemInvoice name={i.name} record={i.record} />)}
             </List>
-
+<Button/>
 
         </div>
     )
