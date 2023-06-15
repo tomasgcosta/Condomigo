@@ -1,10 +1,55 @@
-import React from "react"
+import React, { useState } from 'react';
+import './login.css';
+import logo from '../Img/logo.png';
+import condomingo from '../Img/Condomingo.png';
 
-export default function Login(props) {
+
+
+const LoginPage = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handlePasswordChange = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+    };
 
     return (
-        <div>
-            <h1>Ola Sou o login</h1>
-        </div>
-    )
-}
+        <div className="iphone-frame login-page">
+        
+
+            <img src={logo} alt="Logo" className="logo-image" />
+
+            <div className="login-container">
+            <img src={condomingo} alt="condomingo" className="condomingo" /> 
+                </div>
+                <form className="login-form" onSubmit={handleSubmit}>
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={handleEmailChange}
+                    />
+                    <input
+                        type="password"
+                        placeholder="Senha"
+                        value={password}
+                        onChange={handlePasswordChange}
+                    />
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+       
+    );
+};
+
+export default LoginPage;
+

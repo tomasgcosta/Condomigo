@@ -2,29 +2,29 @@ import React from 'react';
 import styles from './list.module.css'
 import { useEffect, useState } from "react"
 import List from "./list";
-import { ItemHouse } from './items';
-import Header from './header';
+import { ItemHouse, ItemInvoice } from './items';
 
 
-export default function ListHouse() {
+
+export default function ListInvoice() {
     // criar condição para que se o ID do apartamento tem um Id de recibo criado, ele está pago. Desta forma recebe uma imagem verde.
 
 
-    const [apart, setApart] = useState(null)
+    const [invoice, setInvoice] = useState(null)
 
     useEffect(() => {
         async function fetchData() {
 
             const res = await fetch(
-                `/api/apartments`,
+                `/api/condo/invoice`,
                 { method: "GET" }
             );
             if (res.status != 200) {
-                console.log("Apartamentos ainda não disponíveis");
+                console.log("Recibos ainda não disponíveis");
             } else {
                 const data = await res.json();
                 console.log("esse eh o de dados", data);
-                setApart(data);
+                setInvoice(data);
             }
         }
 
@@ -51,7 +51,7 @@ export default function ListHouse() {
     return (
         <div className={styles.container}>
             <List>
-                {apart.map(i => <ItemHouse floor={i.floor} door={i.door} />)}
+                {invoice.map(i => <ItemInvoice name={i.name} record={i.record} />)}
             </List>
 
 
