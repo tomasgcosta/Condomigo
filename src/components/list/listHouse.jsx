@@ -51,7 +51,7 @@ export default function ListHouse() {
     return (
         <div className={styles.container}>
             <List>
-                {apart.map(i => <ItemHouse floor={i.floor} door={i.door} />)}
+                {apart && apart.length > 0 && apart.map(i => <ItemHouse floor={i.floor} door={i.door} />)}
             </List>
 
 

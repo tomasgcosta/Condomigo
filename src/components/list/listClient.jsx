@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react"
-
+import styles from './list.module.css'
 import { ItemClients } from "./items";
 import List from "./list";
 
@@ -43,10 +43,11 @@ export default function ListClients() {
 
     return (
         <div>
-            <List>
-                {cond && cond.length > 0 && cond.map(i => <ItemClients name={i.name} local={i.local} url={i.url} />)}
-            </List>
-
+            <div className={styles.container}>
+                <List>
+                    {cond && cond.length > 0 && cond.map(i => <ItemClients name={i.name} location={i.location} url={i.url} />)}
+                </List>
+            </div>
 
         </div>
     )

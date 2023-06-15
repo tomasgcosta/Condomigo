@@ -1,4 +1,4 @@
-.container{
+.container {
     background: rgb(31, 217, 228, 20%);
 
     min-width: 360px;
@@ -6,24 +6,36 @@
     min-height: 670px;
     max-height: 670px;
 
-    transform: translate(5%,0%);
+    transform: translate(0%, 3%);
     border-radius: 7px;
 
 }
 
-.containerButton{
+.containerButton {
     background-color: aliceblue;
- 
+
     max-height: 45px;
     max-width: 340px;
- 
+
     transform: translate(2%, 25%);
     margin-top: 7px;
- 
-    border-radius: 5px;
- }
 
- .slides{
+    border-radius: 5px;
+}
+
+.slides {
     display: flex;
     flex-direction: row;
- }
+}
+
+.condImg {
+    max-width: 80px;
+    max-height: 80px;
+    left: 42px;
+    top: 98px;
+
+    transform: translate(2%, 25%);
+    margin-top: 7px;
+
+    border-radius: 5px;
+}
