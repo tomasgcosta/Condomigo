@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './list.module.css'
 
+
 export function ItemDate({ name, }) {
 
     return (
@@ -13,22 +14,25 @@ export function ItemDate({ name, }) {
 
 
 
-export function ItemClients({ name, url, onClick, local }) {
+export function ItemClients({ name, url, onClick, location }) {
 
     return (
-        <div className={styles.slides }onClick={onClick}>
+        <div  >
+        <div className={styles.slides } onClick={onClick}>
             <div >
-                <img src={url} alt='123'/>
+
+                <img className={styles.condImg}src={url} alt='123' />
+                
             </div>
             <div>
                 <p>{name}</p>
-                <p>{local}</p>
+                <p>{location}</p>
             </div>
-        </div>
+        </div></div>
     )
 }
 
-export function ItemHouse({ floor, door, onClick, status }) {
+export function ItemHouse({ floor, door, onClick, condoId }) {
 
     return (
         <div className={styles.containerButton} onClick={onClick}>

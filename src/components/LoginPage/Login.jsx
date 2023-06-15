@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './login.css';
+import './Login.css';
 import logo from '../Img/logo.png';
 import condomingo from '../Img/Condomingo.png';
-import { Link } from 'react-router-dom';
+
 
 
 const LoginPage = () => {
@@ -44,9 +44,7 @@ const LoginPage = () => {
                         value={password}
                         onChange={handlePasswordChange}
                     />
-                    <Link to='/homepage'>
                     <button type="submit">Entrar</button>
-                    </Link>
                 </form>
             </div>
        
@@ -54,4 +52,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-

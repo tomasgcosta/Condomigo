@@ -8,6 +8,7 @@ async function connectToMongo() {
   try {
     if (!client) {
       client = await MongoClient.connect(URL);
+      console.log(client)
     }
     return client;
   } catch (err) {
