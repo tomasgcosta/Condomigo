@@ -28,6 +28,6 @@ export default function HomePage(props) {
 
 
             </div>
-
+        </div>
     )
 }
