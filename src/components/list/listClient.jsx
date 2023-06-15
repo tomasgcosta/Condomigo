@@ -4,7 +4,7 @@ import styles from './list.module.css'
 import { ItemClients } from "./items";
 import List from "./list";
 import Button from '../Button/Button';
-
+import { Link } from "react-router-dom"
 
 export default function ListClients() {
 
@@ -46,10 +46,13 @@ export default function ListClients() {
         <div>
             <div className={styles.container}>
                 <List>
-                    {cond && cond.length > 0 && cond.map(i => <ItemClients name={i.name} location={i.location} url={i.url} />)}
+                    {cond && cond.length > 0 && cond.map(i => <Link to='/listaDeApartamento'>
+                        <ItemClients name={i.name} location={i.location} url={i.url}
+                        />
+                    </Link>)}
                 </List>
             </div>
-<Button/>
+            <Button />
         </div>
     )
 }

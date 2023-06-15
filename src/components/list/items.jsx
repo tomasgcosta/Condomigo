@@ -16,6 +16,7 @@ export function ItemDate({ name, }) {
 
 export function ItemClients({ name, url, onClick, location }) {
 
+
     return (
         <div  >
             <div className={styles.slides} onClick={onClick}>
