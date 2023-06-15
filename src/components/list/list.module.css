@@ -1,3 +1,7 @@
+body{
+    background-image: url(../image/fundo.png);
+}
+
 .container {
     background: rgb(31, 217, 228, 20%);
 
