@@ -23,7 +23,7 @@ const LoginPage = () => {
     };
 
     return (
-        <div className="iphone-frame login-page">
+        <div >
         
 
             <img src={logo} alt="Logo" className="logo-image" />
