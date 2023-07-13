@@ -7,3 +7,5 @@ This project was developed with [Carla Medina](https://github.com/carlassmedina)
 - CSS
 - HTML
 - JavaScript
+- Express.js
+- MongoDB
